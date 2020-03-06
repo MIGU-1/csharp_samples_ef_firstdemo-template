@@ -8,14 +8,12 @@ namespace EfDemo.Persistence
   public class ApplicationDbContext : DbContext
   {
     public DbSet<Pupil> Pupils { get; set; }
-
     public DbSet<SchoolClass> SchoolClasses { get; set; }
 
     public ApplicationDbContext() : base()
     {
 
     }
-
     public ApplicationDbContext(DbContextOptions options) : base(options)
     {
 
