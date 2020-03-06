@@ -6,6 +6,8 @@ namespace EfDemo.Core.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int Capacity { get; set; }
+        
         public IList<Pupil> Pupils { get; set; } = new List<Pupil>();
 
         public override string ToString() => $"Id: {Id}, Name: {Name}, Pupils.Count: {Pupils.Count}";
